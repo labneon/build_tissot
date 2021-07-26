@@ -16,7 +16,7 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-mka bootimage -j24
+make bootimage -j24
 #mka bacon -j24
 ccache -s
 
