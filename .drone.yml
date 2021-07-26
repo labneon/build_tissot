@@ -7,5 +7,5 @@ steps:
     DRONE_USER_CREATE: username:massterpiece,admin:true
   commands:
   - cd /drone/src
-  - sudo bash -E sync.sh
-  - sudo bash -E build.sh
+  - sudo bash sync.sh
+  - sudo bash build.sh

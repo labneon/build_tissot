@@ -1,6 +1,6 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 --no-repo-verify -u https://github.com/AOSPA/manifest.git -b ruby -g default,-device,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://android.googlesource.com/platform/manifest -b master -g default,-device,-mips,-darwin,-notdefault
 
 # local manifest
 git clone https://github.com/massterpiece/local_manifest.git --depth 1 -b main .repo/local_manifests
