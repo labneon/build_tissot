@@ -2,13 +2,16 @@
 echo "Build script"
 
 # Export some variables
-export CCACHE_DIR=/drone/ccache
-export CCACHE_EXEC=$(which ccache)
-export USE_CCACHE=1
+#export CCACHE_DIR=/drone/ccache
+#export CCACHE_EXEC=$(which ccache)
+#export USE_CCACHE=1
 
 # Cook
 . build/envsetup.sh
-lunch pa_tissot-userdebug
+export CCACHE_DIR=/drone/ccache
+export CCACHE_EXEC=$(which ccache)
+export USE_CCACHE=1
+lunch lineage_tissot-userdebug
 ccache -M 20G
 ccache -o compression=true
 ccache -z
