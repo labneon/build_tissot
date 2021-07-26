@@ -7,7 +7,7 @@ export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 
 # Cook
-source build/envsetup.sh
+. build/envsetup.sh
 lunch pa_tissot-userdebug
 ccache -M 20G
 ccache -o compression=true
