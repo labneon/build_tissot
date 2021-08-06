@@ -7,11 +7,11 @@ echo "Build script"
 #export USE_CCACHE=1
 
 # Cook
-source build/envsetup.sh
+. build/envsetup.sh
 export CCACHE_DIR=/drone/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-lunch cygnus_tissot-userdebug
+lunch lineage_tissot-userdebug
 ccache -M 20G
 ccache -o compression=true
 ccache -z
