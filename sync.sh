@@ -1,6 +1,6 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 --no-repo-verify -u https://github.com/ShapeShiftOS/android_manifest.git -b 11.0 -g default,-device,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/ShapeShiftOS/android_manifest.git -b android_11 -g default,-device,-mips,-darwin,-notdefault
 
 # local manifest
 git clone https://github.com/labneon/local_manifest.git --depth 1 -b ssos .repo/local_manifests
