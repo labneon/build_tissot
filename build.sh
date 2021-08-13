@@ -18,7 +18,7 @@ ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
 #make bacon -j24
-make vendorimage
+mka vendorimage
 ccache -s
 
 echo "Build Done"
