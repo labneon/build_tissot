@@ -11,14 +11,14 @@ echo "Build script"
 export CCACHE_DIR=/drone/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-lunch lineage_tissot-userdebug
+lunch ssos_rosy-userdebug
 ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 make bootimage -j24
 #make bacon -j24
-mka vendorimage
+#mka vendorimage
 ccache -s
 
 echo "Build Done"
