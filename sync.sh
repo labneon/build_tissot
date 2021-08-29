@@ -19,4 +19,4 @@ git clone https://github.com/neonmicky/vendor -b common vendor/xiaomi/msm8953-co
 rm -rf hardware/qcom-caf/msm8996/display hardware/qcom-caf/msm8996/media hardware/qcom-caf/msm8996/audio
 git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8996-r_display -b eleven hardware/qcom-caf/msm8996/display
 git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8996-r_media -b eleven hardware/qcom-caf/msm8996/media
-git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8996_audio -b eleven hardware/qcom-caf/msm8996/media
+git clone https://github.com/PixelExperience/hardware_qcom-caf_msm8996_audio -b eleven hardware/qcom-caf/msm8996/audio
