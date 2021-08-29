@@ -1,12 +1,12 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 --no-repo-verify -u git://github.com/CalyxOS/platform_manifest.git -b android11-qpr1 -g default,-device,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://android.googlesource.com/platform/manifest -b android-s-beta-4 -g default,-device,-mips,-darwin,-notdefault
 
 # local manifest
 #git clone https://github.com/neonmicky/local_manifest.git --depth 1 -b cr .repo/local_manifests
 
 # Sync source
-repo sync -j16 --prune -c --no-clone-bundle --optimized-fetch --no-tags --current-branch || repo sync -j16 --prune -c --no-clone-bundle --optimized-fetch --no-tags --current-branch
+repo sync -j16 --prune -c --no-clone-bundle --no-tags || repo sync -j16 --prune -c --no-clone-bundle --no-tags
 
 echo "Sync Completed"
 
