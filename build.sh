@@ -16,7 +16,7 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-mka kernel
+mka kernel -j32
 #make bootimage -j24
 #make bacon -j24
 #mka vendorimage
