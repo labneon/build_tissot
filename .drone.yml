@@ -7,6 +7,5 @@ steps:
     DRONE_USER_CREATE: username:massterpiece,admin:true
   commands:
   - cd /drone/src
-  # sudo bash sync.sh
-  # sudo bash build.sh
-tmate  -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}')
+  - sudo bash sync.sh
+  - sudo bash build.sh
