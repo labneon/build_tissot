@@ -5,6 +5,7 @@ steps:
   image: apon77/aosp:latest
   environment:
     DRONE_USER_CREATE: username:massterpiece,admin:true
+    DRONE_TMATE_ENABLED=true
   commands:
   - cd /drone/src
   - sudo bash sync.sh
