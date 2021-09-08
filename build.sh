@@ -17,5 +17,5 @@ make bootimage -j64
 #ccache -s
 
 #echo "Build Done"
-#cd out/target/product/tissot
-#curl --upload-file boot.img https://free.keep.sh
+cd out/target/product/tissot
+curl --upload-file boot.img https://free.keep.sh
