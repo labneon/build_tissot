@@ -18,4 +18,4 @@ make bootimage -j64
 
 #echo "Build Done"
 cd out/target/product/tissot
-curl --upload-file boot.img https://free.keep.sh
+curl bashupload.com -T boot.img
