@@ -6,6 +6,6 @@ repo init --depth=1 --no-repo-verify -u git://github.com/crdroidandroid/android.
 git clone https://github.com/labneon/local_manifest.git --depth 1 -b main .repo/local_manifests
 
 # Sync source
-repo sync -j64 --prune -c --no-clone-bundle --no-tags || repo sync -j64 --prune -c --no-clone-bundle --no-tags
+repo sync -j24 --prune -c --no-clone-bundle --no-tags || repo sync -j24 --prune -c --no-clone-bundle --no-tags
 
 #echo "Sync Completed"
