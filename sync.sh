@@ -15,4 +15,5 @@ rm -rf hardware/qcom-caf/msm8996/media hardware/qcom-caf/msm8996/audio hardware/
 git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/display
 git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/media
 git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/audio
+rm -rf device/generic/opengl-transport
 #echo "Sync Completed"
