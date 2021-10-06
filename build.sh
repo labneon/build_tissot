@@ -12,10 +12,10 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
-make otapackage
+m otapackage
 #mka vendorimage
 #ccache -s
 
 #echo "Build Done"
-cd out/target/product/tissot
-curl bashupload.com -T boot.img
+#cd out/target/product/tissot
+#curl bashupload.com -T boot.img
