@@ -17,3 +17,4 @@ git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18
 git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/audio
 #rm -rf device/generic/opengl-transport
 #echo "Sync Completed"
+cd external/tinycompress && git fetch "https://review.arrowos.net/ArrowOS/android_external_tinycompress" refs/changes/72/14672/1 && git cherry-pick FETCH_HEAD && cd ../..
