@@ -1,6 +1,6 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 -u https://github.com/StatiXOS/android_manifest.git -b sc
+repo init --depth=1 -u https://github.com/aex-tmp/manifest -b 12.x 
 
 # local manifest
 #git clone https://github.com/neonmicky/local_manifest.git --depth 1 -b cr .repo/local_manifests
