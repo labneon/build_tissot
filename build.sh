@@ -2,7 +2,7 @@
 #echo "Build script"
 
 # Cook
-. build/envsetup.sh
+source build/envsetup.sh
 ccache -M 20G
 ccache -o compression=true
 ccache -z
