@@ -8,7 +8,7 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 lunch p404_tissot-userdebug
-make bootimage
+make bacon
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
