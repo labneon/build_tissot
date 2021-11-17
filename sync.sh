@@ -1,20 +1,17 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 -u https://github.com/aex-tmp/manifest -b 12.x 
-
-# local manifest
-#git clone https://github.com/neonmicky/local_manifest.git --depth 1 -b cr .repo/local_manifests
+repo init --depth=1 -u https://github.com/P-404/platform_manifest -b rippa
 
 # Sync source
 repo sync -j24 --prune -c --no-clone-bundle --no-tags || repo sync -j24 --prune -c --no-clone-bundle --no-tags
-git clone https://github.com/labneon/device_xiaomi_tissot -b aosp device/xiaomi/tissot --depth=1
-git clone https://github.com/labneon/device_xiaomi_msm8953-common -b aosp device/xiaomi/msm8953-common --depth=1
-git clone https://github.com/neonmicky/kernel_xiaomi_tissot -b test kernel/xiaomi/msm8953 --depth=1
-git clone https://gitlab.com/the-muppets/proprietary_vendor_xiaomi.git -b lineage-18.1 vendor/xiaomi --depth=1 --single-branch 
-rm -rf hardware/qcom-caf/msm8996/media hardware/qcom-caf/msm8996/audio hardware/qcom-caf/msm8996/display
-git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/display
-git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/media
-git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8996 hardware/qcom-caf/msm8996/audio
-#rm -rf device/generic/opengl-transport
+git clone https://github.com/labneon/device_xiaomi_tissot -b rippa device/xiaomi/tissot --depth=1
+git clone https://github.com/labneon/device_xiaomi_msm8953-common -b rippa device/xiaomi/msm8953-common --depth=1
+git clone https://github.com/neonmicky/kernel_xiaomi_tissot -b 11.0 kernel/xiaomi/msm8953 --depth=1
+git clone https://github.com/neonmicky/vendor_xiaomi -b 11.0-common vendor/xiaomi/msm8953-common --depth=1
+git clone https://github.com/neonmicky/vendor_xiaomi -b 11.0-tissot vendor/xiaomi/tissot --depth=1 
+rm -rf hardware/qcom/media hardware/qcom/audio hardware/qcom/display vendor/qcom/opensource/audio-hal/primary-hal
+git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-18.1-caf-msm8996 hardware/qcom/display --depth=1
+git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18.1-caf-msm8996 hardware/qcom/media --depth=1
+git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-18.1-caf-msm8996 vendor/qcom/opensource/audio-hal/primary-hal --depth=1
 #echo "Sync Completed"
-#cd external/tinycompress && git fetch "https://review.arrowos.net/ArrowOS/android_external_tinycompress" refs/changes/72/14672/1 && git cherry-pick FETCH_HEAD && cd ../..
+
