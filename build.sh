@@ -1,17 +1,13 @@
 #!/bin/sh
 #echo "Build script"
-rm -rf hardware/qcom/media hardware/qcom/display
-git clone https://github.com/aospneon/msm8996-Hals -b dis hardware/qcom/display --depth=1
-git clone https://github.com/aospneon/msm8996-Hals -b med hardware/qcom/media --depth=1
 # Cook
 source build/envsetup.sh
 ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-lunch aospa_tissot-userdebug
-./rom-build.sh tissot
+lunch lineage_tissot-user
+mka bacon
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
