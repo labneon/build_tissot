@@ -1,6 +1,6 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 -u https://github.com/AOSPA/manifest -b sapphire
+repo init --depth=1 --no-repo-verify -u https://github.com/AOSPA/manifest -b sapphire
 git clone https://github.com/neonmicky/local_manifest.git -b sapphire .repo/local_manifests --depth=1
 
 # Sync source
