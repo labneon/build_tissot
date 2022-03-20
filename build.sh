@@ -9,6 +9,7 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 lunch aospa_tissot-userdebug
 ./rom-build.sh tissot
 #echo "Build Done"
