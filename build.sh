@@ -6,8 +6,9 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-lunch lineage_tissot-user
-mka bacon
+lunch lineage_tissot-userdebug
+mka sepolicy
+mka bootimage
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
