@@ -9,4 +9,3 @@ steps:
   - cd /drone/src
   - DRONE_TMATE_ENABLED=true
   - sudo bash sync.sh
-  - sudo bash build.sh
