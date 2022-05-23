@@ -8,4 +8,4 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build
 source build/envsetup.sh
 lunch p404_tissot-userdebug
-make sepolicy
+make bootimage
