@@ -5,7 +5,7 @@ git clone https://github.com/aospneon/local_manifest --depth 1 -b shinka .repo/l
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -j24 --prune -c --no-clone-bundle --no-tags
 
 #echo "Sync Completed"
-# build
+# build 
 source build/envsetup.sh
 lunch p404_tissot-userdebug
 make bacon
